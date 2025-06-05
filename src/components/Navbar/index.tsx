@@ -27,7 +27,7 @@ export default function Navbar() {
         scrolled ? "bg-gray-900/90" : "bg-gray-900/70"
       }`}
     >
-      <div className="flex items-center justify-between max-w-7xl mx-auto">
+      <div className="flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
           <div className="relative mr-2">

@@ -1,6 +1,8 @@
 import Hero from "../components/Hero";
 import Background from "@/components/Background";
 import Services from "@/components/Services";
+import About from '@/components/About';
+//import ContactInterface from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -8,6 +10,7 @@ export default function Home() {
       <Background />
       <Hero />
       <Services />
+      <About />
     </main>
   );
 }

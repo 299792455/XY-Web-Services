@@ -2,8 +2,7 @@ import Hero from "../components/Hero";
 import Background from "@/components/Background";
 import Services from "@/components/Services";
 import About from '@/components/About';
-//import ContactInterface from "@/components/Contact";
-
+import ContactForm from "@/components/ContactForm";
 export default function Home() {
   return (
     <main className="bg-black text-white font-['Space_Grotesk'] overflow-x-hidden">
@@ -11,6 +10,7 @@ export default function Home() {
       <Hero />
       <Services />
       <About />
+     <ContactForm />
     </main>
   );
 }

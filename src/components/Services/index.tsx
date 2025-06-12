@@ -69,7 +69,7 @@ export default function OfferSection() {
         </div>
       </section>
 
-      {/* Bloc CSS global pour recréer le SCSS/CSS que vous avez fourni */}
+    
       <style jsx global>{`
         @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&display=swap");
 

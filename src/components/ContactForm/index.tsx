@@ -3,12 +3,12 @@
 export default function ContactForm() {
   return (
     <section id="contact" className="py-32 px-4 min-h-[400px]">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-center text-4xl font-bold uppercase relative">
+      <div className="max-w-[1200px] mx-auto px-4">
+        <h2 className="text-center text-4xl md:text-5xl xl:text-6xl font-semibold max-w-3xl mx-auto leading-snug bg-white bg-clip-text text-transparent">
           Contact
         </h2>
         <span className="block w-12 h-2 mt-4 mx-auto bg-gradient-to-r from-indigo-900/90 to-purple-900/90"></span>
-        <p className="text-center  mt-4 mb-12">Une question, un projet ou simple curiosité..n’hésitez pas à nous contacter</p>
+        <p className="text-center  mt-4 mb-16">Une question, un projet ou simple curiosité..n’hésitez pas à nous contacter</p>
 
         <form className="grid gap-4">
           <input
@@ -41,7 +41,7 @@ export default function ContactForm() {
           <input
             type="submit"
             value="Envoyer"
-            className="w-fit px-8 py-3 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 text-white font-semibold uppercase rounded hover:opacity-80 cursor-pointer"
+            className="w-fit px-8 py-3 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 text-white rounded hover:opacity-80 cursor-pointer"
           />
         </form>
       </div>

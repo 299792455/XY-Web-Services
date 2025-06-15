@@ -30,26 +30,25 @@ export default function Navbar() {
       <div className="flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center group">
-  <div className="relative mr-2">
-    <div className="absolute inset-0 bg-cyan-400/30 rounded-md blur-sm"></div>
-    <div className="w-10 h-10 rounded-md bg-gradient-to-br from-indigo-600 to-purple-600 border border-indigo-400/30 flex items-center justify-center relative shadow-lg shadow-indigo-800/20">
-      <div className="absolute inset-[3px] bg-gray-900 rounded-[4px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/20 to-purple-900/20"></div>
-        <div className="font-bold text-lg bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent">
-          XY
-        </div>
-      </div>
-    </div>
-  </div>
-  <div className="text-xl font-medium bg-gradient-to-r from-indigo-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent">
-    XY Web Services
-  </div>
-</Link>
-
+          <div className="relative mr-2">
+            <div className="absolute inset-0 bg-cyan-400/30 rounded-md blur-sm"></div>
+            <div className="w-10 h-10 rounded-md bg-gradient-to-br from-indigo-600 to-purple-600 border border-indigo-400/30 flex items-center justify-center relative shadow-lg shadow-indigo-800/20">
+              <div className="absolute inset-[3px] bg-gray-900 rounded-[4px] flex items-center justify-center overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/20 to-purple-900/20"></div>
+                <div className="font-bold text-lg bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent">
+                  XY
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="text-xl font-medium bg-gradient-to-r from-indigo-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent">
+            XY Web Services
+          </div>
+        </Link>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center space-x-1">
-          {['home', 'about', 'services', 'portfolio'].map((id) => (
+          {['home','services', 'about','portfolio'].map((id) => (
             <a
               key={id}
               href={`#${id}`}
@@ -60,9 +59,14 @@ export default function Navbar() {
           ))}
           <div className="relative ml-4 group">
             <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-600/50 to-purple-600/50 rounded-lg blur opacity-75 group-hover:opacity-100 transition-all duration-500"></div>
-            <button className="contact-btn px-4 py-2 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 rounded-lg text-white text-sm font-medium relative z-10">
-              <span className="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">Contact</span>
-            </button>
+            <a
+              href="#contact"
+              className="px-4 py-2 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 rounded-lg text-white text-sm font-medium relative z-10"
+            >
+              <span className="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">
+                Contact
+              </span>
+            </a>
           </div>
         </div>
 
@@ -103,7 +107,7 @@ export default function Navbar() {
         }`}
       >
         <div className="space-y-1">
-          {['home', 'about', 'services', 'portfolio', 'contact'].map((id) => (
+          {['home', 'about', 'services', 'portfolio'].map((id) => (
             <a
               key={id}
               href={`#${id}`}
@@ -114,9 +118,15 @@ export default function Navbar() {
             </a>
           ))}
           <div className="px-4 pt-2">
-            <button className="contact-btn w-full px-4 py-2 bg-gradient-to-r from-indigo-700 to-purple-700 rounded-lg text-white text-sm font-medium">
-              <span className="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">Connect</span>
-            </button>
+            <a
+              href="#contact"
+              onClick={() => setMenuOpen(false)}
+              className="contact-btn w-full px-4 py-2 bg-gradient-to-r from-indigo-700 to-purple-700 rounded-lg text-white text-sm font-medium"
+            >
+              <span className="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">
+                Contact
+              </span>
+            </a>
           </div>
         </div>
       </div>

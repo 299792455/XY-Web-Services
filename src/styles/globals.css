@@ -1,14 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;700&family=Work+Sans:wght@400;500&display=swap');
 @import "tailwindcss";
-@import '../components/Portfolio/Portfolio.module.css';
+
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Polices */
+  --font-titles: 'EB Garamond', serif;
+  --font-body: 'Work Sans', sans-serif;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-body);
   --font-mono: var(--font-geist-mono);
 }
 
@@ -22,5 +29,9 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-titles) !important;
 }

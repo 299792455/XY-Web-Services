@@ -6,7 +6,7 @@ import ContactForm from "@/components/ContactForm";
 import Portfolio from "@/components/Portfolio";
 export default function Home() {
   return (
-    <main className="bg-black text-white font-['Space_Grotesk'] overflow-x-hidden">
+    <main className="bg-black text-white overflow-x-hidden">
       <Background />
       <Hero />
       <Services />

@@ -8,7 +8,7 @@ export default function ContactForm() {
           Contact
         </h2>
         <span className="block w-12 h-2 mt-4 mx-auto bg-gradient-to-r from-indigo-900/90 to-purple-900/90"></span>
-        <p className="text-center  mt-4 mb-12">Une question, un projet ou simple curiosité..n'hésitez pas à nous contacter</p>
+        <p className="text-center  mt-4 mb-12">Une question, un projet ou simple curiosité..n’hésitez pas à nous contacter</p>
 
         <form className="grid gap-4">
           <input

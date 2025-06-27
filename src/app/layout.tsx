@@ -6,8 +6,16 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "XY Web Services",
-  description: "Le Web pas cher et efficace",
+  title: "XY Web Services - Création de sites modernes & accessibles",
+  description: "Agence web spécialisée en design responsive, SEO et développement React/Next.js. Basée à Paris, 17e.",
+  openGraph: {
+    title: "XY Web Services",
+    description: "Création de sites web modernes, responsive et optimisés SEO.",
+    url: "https://xyweb.services",
+    siteName: "XY Web",
+    locale: "fr_FR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

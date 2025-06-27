@@ -66,41 +66,40 @@ export default function ContactForm() {
 
         <form className="grid gap-4" onSubmit={handleSubmit}>
           <input
-            type="text"
-            placeholder="Nom"
-            name="name"
-            required
-            className="w-full p-3 bg-gray-100 text-gray-800 rounded"
-          />
-          <input
-            type="email"
-            placeholder="Email"
-            name="email"
-            required
-            className="w-full p-3 bg-gray-100 text-gray-800 rounded"
-          />
-          <input
-            type="number"
-            placeholder="Téléphone"
-            name="number"
-            className="w-full p-3 bg-gray-100 text-gray-800 rounded"
-          />
-          <textarea
-            placeholder="Votre message"
-            name="message"
-            required
-            className="w-full p-3 h-40 bg-gray-100 text-gray-800 rounded resize-none"
-          ></textarea>
+    type="text"
+    placeholder="Nom"
+    name="name"
+    required
+    className="w-full px-2 py-3 bg-transparent border-b border-white/60 text-white placeholder-white/40 focus:outline-none focus:border-white transition"
+  />
+  <input
+    type="email"
+    placeholder="Email"
+    name="email"
+    required
+    className="w-full px-2 py-3 bg-transparent border-b border-white/60 text-white placeholder-white/40 focus:outline-none focus:border-white transition"
+  />
+  <input
+    type="number"
+    placeholder="Téléphone"
+    name="number"
+    className="w-full px-2 py-3 bg-transparent border-b border-white/60 text-white placeholder-white/40 focus:outline-none focus:border-white transition"
+  />
+  <textarea
+    placeholder="Votre message"
+    name="message"
+    required
+    className="w-full px-2 py-3 h-40 bg-transparent border-b border-white/60 text-white placeholder-white/40 focus:outline-none focus:border-white transition resize-none"
+  ></textarea>
 
-          {/* Honeypot field (invisible to users) */}
-          <input
-            type="text"
-            name="website"
-            tabIndex={-1}
-            autoComplete="off"
-            className="hidden"
-          />
-
+  {/* Honey*/}
+  <input
+    type="text"
+    name="website"
+    tabIndex={-1}
+    autoComplete="off"
+    className="hidden"
+  />
           <button
             type="submit"
             disabled={loading}
